@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Room Layout</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-entity position="4 12 5">
+      <a-camera></a-camera>
+    </a-entity>
+    <a-scene>
+      <a-sky
+      color="#fce185"
+      ></a-sky>
+
+      <a-plane
+        id="ground"
+        src="https://th.bing.com/th/id/OIP.KceM3P5urjLPnozeE-0NkgHaHV?pid=ImgDet&rs=1"
+        position="0 0 0"
+        rotation="-90 0 0"
+        width="20"
+        height="10"
+      ></a-plane>
+
+      <a-plane
+        id="carpet"
+        src="https://th.bing.com/th/id/OIP.K4ewc8SqLmugE9qj-bERUQHaHa?pid=ImgDet&rs=1"
+        position="0 0.1 0.5"
+        rotation="-90 0 0"
+        width="8"
+        height="5"
+      ></a-plane>
+
+      <a-box
+        id="wall"
+        src="https://img1.exportersindia.com/product_images/bc-full/2018/8/4781690/interior-wall-painting-1534506050-4205014.jpeg"
+        position="0 6.5 -4.5"
+        width="20"
+        height="13"
+      >
+      </a-box>
+
+      <!-- Chair 1  -->
+      <a-cylinder color="black" radius="1.1" position="6.5 -0.4 0">
+        <a-cylinder color="black" radius="0.1" position="0 1 0" height="1.2">
+        </a-cylinder>
+        <a-cylinder
+          color="black"
+          position="0 1.9 0"
+          rotation="0 0 0"
+          radius="1.3"
+          height="0.2"
+        ></a-cylinder>
+
+        <a-cylinder
+          src="https://www.cubicles.com/shop/images/office-waiting-room-chairs-lounge-office-chair.jpg"
+          position="0 2 0"
+          rotation="0 0 0"
+          radius="1.2"
+          height="0.2"
+        ></a-cylinder>
+
+        <a-cylinder
+          color="black"
+          position="0.85 3 0"
+          rotation="90 -90 0"
+          radius="1.3"
+          height="0.2"
+        ></a-cylinder>
+      </a-cylinder>
+
+      <!-- Chair 2  -->
+
+      <a-cylinder color="black" radius="1.2" position="-6.5 -0.4 0">
+        <a-cylinder color="black" radius="0.1" position="0 1 0" height="1.2">
+        </a-cylinder>
+        <a-cylinder
+          color="black"
+          position="0 1.9 0"
+          rotation="0 0 0"
+          radius="1.3"
+          height="0.2"
+        ></a-cylinder>
+
+        <a-cylinder
+          src="https://www.cubicles.com/shop/images/office-waiting-room-chairs-lounge-office-chair.jpg"
+          position="0 2 0"
+          rotation="0 0 0"
+          radius="1.2"
+          height="0.2"
+        ></a-cylinder>
+
+        <a-cylinder
+          color="black"
+          position="-0.85 3 0"
+          rotation="90 -90 0"
+          radius="1.3"
+          height="0.2"
+        ></a-cylinder>
+      </a-cylinder>
+
+      <!-- Dining Table -->
+      <a-box
+        color="black"
+        width="9"
+        height="2.5"
+        position="0 2 0"
+        rotation="90 0 0"
+        
+      >
+        <a-cylinder
+          color="black"
+          height="2"
+          radius="0.2"
+          rotation="90 0 0"
+          position="0 0 1"
+        ></a-cylinder>
+      </a-box>
+
+      <!-- Lamp -->
+
+      
+
+      <!--  --------- CAMERA --------- -->
+
+      <a-camera position="0 5 15">
+      </a-camera>
+    </a-scene>
+  </body>
+</html>
